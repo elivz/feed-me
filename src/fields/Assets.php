@@ -55,7 +55,7 @@ class Assets extends Field implements FieldInterface
         if (is_array($folders)) {
             foreach ($folders as $folder) {
                 list($type, $folderUid) = explode(':', $folder);
-                $id = Db::idByUid('{{%fieldgroups}}',$folderUid);
+                $id = Db::idByUid('{{%volumefolders}}',$folderUid);
 
                 $folderIds[] = $id;
 

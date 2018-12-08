@@ -47,7 +47,7 @@ class Tags extends Field implements FieldInterface
 
         // Get source id's for connecting
         list($type, $groupUid) = explode(':', $source);
-        $groupId = Db::idByUid('{{%fieldgroups}}',$groupUid);
+        $groupId = Db::idByUid('{{%taggroups}}',$groupUid);
 
         $foundElements = [];
 
