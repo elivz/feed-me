@@ -54,7 +54,9 @@ class Assets extends Field implements FieldInterface
 
         if (is_array($folders)) {
             foreach ($folders as $folder) {
-                list(, $id) = explode(':', $folder);
+                list($type, $folderUid) = explode(':', $folder);
+                $id = Db::idByUid('{{%fieldgroups}}',$folderUid);
+
                 $folderIds[] = $id;
 
                 // Get all sub-folders for this root folder
