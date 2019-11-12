@@ -43,7 +43,7 @@ class Linkit extends Field implements FieldInterface
         }
 
         if ($preppedData && empty($preppedData['type'])) {
-            $preppedData['type'] = 'fruitstudios\linkit\models\Url';
+            $preppedData['type'] = 'fruitstudios\linkit\models\Phone';
         }
 
         // Protect against sending an empty array
